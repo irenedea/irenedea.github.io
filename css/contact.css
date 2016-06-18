@@ -1,0 +1,32 @@
+
+p.description {
+	font-size: 22.5px;
+	font-family: "courier new";
+	margin-top: auto;
+	text-align: center;
+	margin: auto;
+}
+
+#descr{
+	background-color: white;
+	height: 337.5px;
+	width: 562.5px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+a:link {
+    text-decoration: underline;
+    color: black
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: black;
+}
+
+a:visited {
+	color: black;
+}

@@ -1,0 +1,78 @@
+/*body{
+	background-image: url("pencil.png");
+}*/
+
+p.title{
+	font-size: 112.5px;
+	font-family: "Century Gothic";
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+	color: black;
+}
+
+p.description {
+	font-size: 22.5px;
+	font-family: "courier new";
+	margin-top: auto;
+	text-align: center;
+	margin: auto;
+}
+
+p.links {
+	font-size: 16.87px;
+	font-family: "courier new";
+	margin-top: auto;
+	text-align: center;
+	margin: auto;
+}
+
+#currentpage {
+	color: #A94C9C;
+	font-weight: bold;
+	background-color: yellow;
+}
+
+a:link {
+    text-decoration: underline;
+    color: black
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: #4B8EAA;
+}
+
+
+ul.navbar {
+	list-style-type: none;
+	margin: 50px;
+	padding: 50px;
+	font-family: "courier new";
+	font-size: 20px;
+}
+
+#block{
+	background-color: white;
+	height: 337.5px;
+	width: 562.5px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+#block2{
+	background-color: white;
+	height: auto;
+	width: 562.5px;
+	top: 30%;
+	left: 20%;
+	position: absolute;
+/*	text-align: left;*/
+}
+
