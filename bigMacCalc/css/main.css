@@ -1,0 +1,98 @@
+/*body {
+	background-image: url("big_mac.png");
+	background-repeat: no-repeat;
+}*/
+
+p.title {
+	font-size: 100px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+p.title font1 {
+	font-family: "Century Gothic";
+}
+
+p.title font2 {
+	font-family: "Courier New";
+}
+
+p.subtitle {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 2px;
+}
+
+p.subtitle font1 {
+	font-family: "Century Gothic";
+}
+
+p.info {
+	margin-top: 30px;
+	font-size: 10px;
+	text-align: center;
+	font-family: "Century Gothic";
+	font-style: italic;
+}
+
+p.nav {
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	text-decoration: none
+}
+
+img {
+	height: 400px;
+	width: 420px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-left: 20px;
+}
+
+li:hover {
+	background-color:yellow;
+	cursor: pointer;
+}
+
+.dropdown{
+	text-align: center;
+	position:relative;
+}
+
+ul.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+}
+
+#toTop {
+	position: fixed;
+	left: 87%;
+	z-index: 1
+}
+
+a.nav {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: #4B8EAA;
+}

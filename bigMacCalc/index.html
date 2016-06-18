@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/main.css">
+
+
+ <title>BIG MAC CALCULATOR</title>
+ <a href = "../index.html" class="nav"><p id = "toTop" class = "nav">BACK TO WEBSITE!</a></p>
+ <p class="title"> <font1> BIGMAC</font1><font2>alc </font2></p>
+  <p class="title" id="input-display"></p>
+ <p class="subtitle"><font1>how many big macs can i get with...</p></font1>
+ <center>
+  <div class="form-group">
+	<label for="amount">$</label>
+      <input placeholder="USD" type="text" id="amount">
+    </div>
+</center>
+
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">PICK A COUNTRY!
+    <span class="caret"></span></button>
+		<ul class="dropdown-menu scrollable-menu" role="menu">
+			<li class="calc-input" onClick="calculate(this.innerHTML)">United States</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Argentina</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Australia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Brazil</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Britain</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Canada</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Chile</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">China</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Colombia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Costa Rica</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Czech Republic</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Denmark</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Egypt</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Euro area</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Hong Kong</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Hungary</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">India</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Indonesia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Israel</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Japan</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Latvia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Lithuania</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Malaysia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Mexico</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">New Zealand</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Norway</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Pakistan</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Peru</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Philippines</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Poland</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Russia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Saudi Arabia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Singapore</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">South Africa</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">South Korea</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Sri Lanka</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Sweden</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Switzerland</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Taiwan</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Thailand</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Turkey</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">UAE</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Ukraine</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Uruguay</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Venezuela</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Vietnam</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Austria</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Belgium</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Estonia</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Finland</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">France</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Germany</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Greece</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Ireland</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Italy</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Netherlands</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Portugal</li>
+			<li class="calc-input" onClick="calculate(this.innerHTML)">Spain</li>
+
+
+    </ul>
+ </div> 
+  <img src="images/big_mac.png">
+
+  <p class="info">&#169 Irene Dea 2015</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script src="javascript/calculator.js"></script>
+
