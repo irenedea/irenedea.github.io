@@ -4,11 +4,73 @@
  	<title>Irene Dea</title>
  </head>
  <body>
-  	<div id="block">
- 		<p class="title">irene dea</p>
- 		<p class="links">((  <a href="about.html" id="about">about</a>  -  <a href="#" id="resume">resume</a>  -  <a href="#" id="projects">projects</a>  -  <a href="#" id="art">art</a>  -  <a href="contact.html" id="contact">contact</a>  ))</p><br>
- 		<p class="description"> Hi! I'm Irene. I'm a second year at UC Berkeley pursuing a major in computer science and a minor in bioengineering. Welcome to my site!</p>
+
+<!-- 	<a href = "#" class="nav"><p id = "toTop" class = "nav">BACK TO THE TOP!</a></p> -->
+	<div class="dropdown">
+		<button class="dropbtn">Menu</button>
+			<div class="dropdown-content">
+				<a href="#" id="drop">home</a>
+				<a href="#aboutBox" id="drop">about</a>
+				<a href="#resumeBox" id="drop">resume</a>
+				<a href="#projectBox" id="drop">projects</a>
+				<a href="#" id="drop">artwork</a>
+				<a href="#contactBox" id="drop">contact</a>
+			</div>
 	</div>
+
+ 	<div class="box" id="index">
+	  	<div class="innerBox" id="index1">
+	 		<p class="title">irene dea</p>
+	 		<p class="links">((  <a href="#aboutBox" id="about">about</a>  -  <a href="#resumeBox" id="resume">resume</a>  -  <a href="#projectBox" id="projects">projects</a>  -  <a href="#" id="art">art</a>  -  <a href="#contactBox" id="contact">contact</a>  ))</p>
+			<br>
+	 		<p class="description" id="homeDescription"> Hi! I'm Irene. I'm a third year at UC Berkeley pursuing a major in computer science and a minor in bioengineering. Welcome to my site!</p>
+		</div>
+	</div>	
+
+	<div class="box" id="aboutBox">
+		<div class="innerBox" id="aboutInnerBox">
+			<div id="aboutDescription">
+				<p class="aboutText">Hi! I'm Irene. I'm a computer science major at UC Berkeley from San Diego, CA. (No, I don't know how to surf...) </p>
+				<br>
+				<p class="aboutText">This past summer I was an engineering intern at SPAWAR in San Diego where I designed and built <a href="project.html">microbial fuel cells</a>. I also spent the summer <a href="art.html">drawing</a> and learning how to whistle and how to beat-box. This summer, I'm returning to SPAWAR to work on nano-satellites...stay tuned! </p>
+				<br>
+				<p class="aboutText">I am a part of Innovative Design, a UC Berkeley design club. During the Fall 2015 and Spring 2016 semesters, I did <a href="art.html#design">design work</a> for on-campus organizations. I will be a part of marketing for Innovative Design for Fall 2016. I'm also on the Cal Badminton team. I've been playing badminton for six years now ever since I joined my high school's team my freshman year of high school. </p>
+				<br>
+				<p class="aboutText">I'm always looking for new opportunities to improve my skills and to learn something new, so feel free to <a href="#contactBox">contact</a> me and check out my <a href="#resumeBox">resume</a>! 
+			</div>	
+			<div id="myPic"> <img id="myPic" src="images/me.jpg" width="560"></img>
+			</div>
+		</div>
+	</div>
+
+	<div class="box" id="projectBox">
+		<div class="innerBox">
+			<center><img id="plant" src="images/plant.png" height=183></img></center>
+			<p class="description"><a id="bigMac" href="bigMacCalc/index.html">Big Mac Calculator</a>: a light-hearted way to learn about purchasing power parity.</p>
+			<br>
+			<p class="description"><a id="mfc" href="files/MFC_Poster.pdf">MFC Research and Design</a>: how I spent the summer after my freshman year. (Click the link to see my final presentation poster!)</p>
+			<br>
+		</div>	
+	</div>
+
+	<div class="box" id="resumeBox">
+		<div class="innerBox">
+			<center><img id="paper" src="images/miniresume.png" height=183></img></center>
+			<p class="description">Take a look at my <a id="resume2" href="files/resume.pdf">resume</a>.</p>
+			<br>
+		</div>	
+	</div>
+
+
+	<div class="box" id="contactBox">
+		<div class="innerBox">
+	 		<center><img id="phone" src="images/minihotlinebling.png"></img></center>
+	 		<p class="description">Feel free to shoot me an email at <a id="email" href="mailto: irenedea@berkeley.edu">irenedea@berkeley.edu</a> or connect with me on 
+	 		<a id="linkedin" href="https://www.linkedin.com/in/irene-dea-83a272108">Linkedin</a>!</p>
+	 	</div>
+ 	</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="javascript/backgroundhover.js"></script>
+
 </body>
