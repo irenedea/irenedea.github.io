@@ -85,11 +85,11 @@ $("#bigMac").hover(
 	})
 
 
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-    
-    return false;
-});
+$("#mfc").hover( 
+	function(){
+		$("#plant")[0].src="images/minilightbulb.png";
+		$("#plant")[0].height="183";
+	},
+	function(){
+		$("#plant")[0].src="images/plant.png";
+	})
