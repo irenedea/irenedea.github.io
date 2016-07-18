@@ -51,7 +51,7 @@
 
 p.title{
 	font-size: 112.5px;
-	font-family: "Tahoma";
+	font-family: "Century Gothic";
 	margin-top: 20px;
 	margin-bottom: 5px;
 	text-align: center;
@@ -139,8 +139,7 @@ a:hover {
 
 div.box {
 /*	height: 900px;*/
-	height: 100%;
-	position: relative;
+/*	position: relative;*/
 }
 
 
