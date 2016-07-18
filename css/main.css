@@ -1,23 +1,25 @@
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+	color: #4B8EAA;
     padding: 16px;
-    font-size: 16px;
+    font-size: 30px;
     border: none;
     cursor: pointer;
+    font-family: "Century Gothic"
 }
 
 .dropdown {
 	z-index: 1;
     position: fixed;
     display: inline-block;
+    top: 2%;
     left: 90%;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
     right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -37,7 +39,8 @@
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    font-weight: bold;
+    color: #4B8EAA;
 }
 
 #drop {
@@ -48,13 +51,18 @@
 
 p.title{
 	font-size: 112.5px;
-	font-family: "Century Gothic";
+	font-family: "Tahoma";
 	margin-top: 20px;
 	margin-bottom: 5px;
 	text-align: center;
 	color: black;
 }
 
+#name {
+	padding: 30px;
+	height: 120.5px;
+	width: 425px;
+}
 p.description {
 	font-size: 22.5px;
 	font-family: "Century Gothic";
@@ -130,7 +138,8 @@ a:hover {
 
 
 div.box {
-	height: 900px;
+/*	height: 900px;*/
+	height: 100%;
 	position: relative;
 }
 
@@ -145,6 +154,7 @@ div.innerBox {
 	position: absolute;
 	transform: translate(-50%, -50%);
 }
+
 
 #myPic {
 	float: left;
