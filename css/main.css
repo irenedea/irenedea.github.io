@@ -5,7 +5,7 @@
     font-size: 30px;
     border: none;
     cursor: pointer;
-    font-family: "Century Gothic"
+    font-family: "Century Gothic", "Avenir-Book";
 }
 
 .dropdown {
@@ -51,7 +51,7 @@
 
 p.title{
 	font-size: 170px;
-	font-family: "Century Gothic", "AppleGothic";
+	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: 0px;
 	margin-bottom: 5px;
 	text-align: center;
@@ -66,7 +66,7 @@ p.title{
 }
 p.description {
 	font-size: 30px;
-	font-family: "Century Gothic";
+	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: auto;
 	text-align: center;
 	margin: auto;
@@ -81,7 +81,7 @@ p.description {
 
 p.links {
 	font-size: 25px;
-	font-family: "Century Gothic";
+	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: auto;
 	margin: auto;
 	text-align: center;
@@ -89,7 +89,7 @@ p.links {
 
 p.aboutText {
 	font-size: 18.5px;
-	font-family: "Century Gothic";
+	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: auto;
 	margin: auto;
 }
@@ -106,7 +106,7 @@ p.aboutText {
 
 p.nav {
 	font-size: 20px;
-	font-family: "Century Gothic";
+	font-family: "Century Gothic", "Avenir-Book";;
 	font-weight: bold;
 	text-decoration: none
 }
