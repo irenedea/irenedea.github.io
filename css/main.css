@@ -51,7 +51,7 @@
 
 p.title{
 	font-size: 130px;
-	font-family: "Century Gothic", "Avenir-Book";;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 	margin-top: 0px;
 	margin-bottom: 5px;
 	text-align: center;
@@ -65,7 +65,7 @@ p.title{
 }
 p.description {
 	font-size: 3.1vh;
-	font-family: "Century Gothic", "Avenir-Book";;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 	margin-top: auto;
 	margin: auto;
 	width: 90%;
@@ -80,7 +80,7 @@ p.description {
 
 p.links {
 	font-size: 2.5vh;
-	font-family: "Century Gothic", "Avenir-Book";;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 	margin-top: auto;
 	margin: auto;
 	text-align: center;
@@ -88,7 +88,7 @@ p.links {
 
 p.aboutText {
 	font-size: 18.5px;
-	font-family: "Century Gothic", "Avenir-Book";;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 	margin-top: auto;
 	margin: auto;
 }
@@ -105,7 +105,7 @@ p.aboutText {
 
 p.nav {
 	font-size: 20px;
-	font-family: "Century Gothic", "Avenir-Book";;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 	font-weight: bold;
 	text-decoration: none
 }
