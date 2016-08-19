@@ -50,13 +50,12 @@
 
 
 p.title{
-	font-size: 170px;
+	font-size: 130px;
 	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: 0px;
 	margin-bottom: 5px;
 	text-align: center;
 	color: black;
-	width: 100%;
 }
 
 #name {
@@ -65,10 +64,9 @@ p.title{
 	width: 425px;
 }
 p.description {
-	font-size: 30px;
+	font-size: 3.1vh;
 	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: auto;
-	text-align: center;
 	margin: auto;
 	width: 90%;
 }
@@ -76,11 +74,12 @@ p.description {
 #homeDescription {
 	padding-left: 10px;
 	padding-right: 10px;
+	text-align: center;
 }
 
 
 p.links {
-	font-size: 25px;
+	font-size: 2.5vh;
 	font-family: "Century Gothic", "Avenir-Book";;
 	margin-top: auto;
 	margin: auto;
@@ -95,7 +94,7 @@ p.aboutText {
 }
 
 #aboutInnerBox{
-	width: 1270px;	
+	width: 70%;
 }
 
 #aboutDescription {
@@ -140,8 +139,7 @@ a:hover {
 
 
 div.box {
-/*	height: 900px;*/
-/*	position: relative;*/
+	height: 110vh;
 }
 
 
@@ -149,14 +147,18 @@ div.box {
 div.innerBox {
 	background-color: white;
 	height: auto;
-	width: 50%;
 /*	width: 600px;*/
 	top: 50%;
 	left: 50%;
-	position: absolute;
-	padding: 40px;
+	position: relative;
+	padding: 2%;
 	transform: translate(-50%, -50%);
 }
+
+#index1{
+	width: 50%;
+}
+
 
 
 #myPic {
@@ -165,5 +167,19 @@ div.innerBox {
 	margin-left: 20px
 }
 
+#resumeInnerBox{
+	width: 70%;
+}
 
+#backToTop{
+	z-index: 1;
+	position: fixed;
+	display: inline-block;
+    top: 85%;
+    left: 85%;
+}
+
+#phone{
+	height: 130px;
+}
 

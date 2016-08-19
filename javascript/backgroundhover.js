@@ -1,3 +1,4 @@
+
 $("#art").hover( 
 	function(){
 		$("body").css("background-image", "url(images/miniminipencil.png)");
@@ -6,6 +7,28 @@ $("#art").hover(
 	function(){
 		$("body").css("background-image", "");
 		$("#index1").css("border", "");
+		$(".innerBox").css("border", "");
+	})
+
+$("#art").click( 
+	function(){
+		$("#art").unbind("mouseenter mouseleave"); 
+		$("body").css("background-image", "url(images/miniminipencil.png)");
+		$("#index1").css("border", "1px solid #85D5F7");
+		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#art").mouseleave(
+			function(){
+				$("#art").hover( 
+				function(){
+					$("body").css("background-image", "url(images/miniminipencil.png)");
+					$("#index1").css("border", "1px solid #85D5F7");
+				},
+				function(){
+					$("body").css("background-image", "");
+					$("#index1").css("border", "");
+					$(".innerBox").css("border", "");
+				})
+			})
 	})
 
 $("#about").hover( 
@@ -16,6 +39,28 @@ $("#about").hover(
 	function(){
 		$("body").css("background-image", "");
 		$("#index1").css("border", "");
+		$(".innerBox").css("border", "");
+	})
+
+$("#about").click( 
+	function(){
+		$("#about").unbind("mouseenter mouseleave"); 
+		$("body").css("background-image", "url(images/miniminicreature.png)");
+		$("#index1").css("border", "1px solid #85D5F7");
+		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#about").mouseleave(
+			function(){
+				$("#about").hover( 
+				function(){
+					$("body").css("background-image", "url(images/miniminicreature.png)");
+					$("#index1").css("border", "1px solid #85D5F7");
+				},
+				function(){
+					$("body").css("background-image", "");
+					$("#index1").css("border", "");
+					$(".innerBox").css("border", "");
+				})
+			})
 	})
 
 $("#contact").hover( 
@@ -26,6 +71,28 @@ $("#contact").hover(
 	function(){
 		$("body").css("background-image", "");
 		$("#index1").css("border", "");
+		$(".innerBox").css("border", "");
+	})
+
+$("#contact").click( 
+	function(){
+		$("#contact").unbind("mouseenter mouseleave"); 
+		$("body").css("background-image", "url(images/minihotlinebling.png)");
+		$("#index1").css("border", "1px solid #85D5F7");
+		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#contact").mouseleave(
+			function(){
+				$("#contact").hover( 
+				function(){
+					$("body").css("background-image", "url(images/minihotlinebling.png)");
+					$("#index1").css("border", "1px solid #85D5F7");
+				},
+				function(){
+					$("body").css("background-image", "");
+					$("#index1").css("border", "");
+					$(".innerBox").css("border", "");
+				})
+			})
 	})
 
 $("#projects").hover( 
@@ -36,7 +103,30 @@ $("#projects").hover(
 	function(){
 		$("body").css("background-image", "");
 		$("#index1").css("border", "");
+		$(".innerBox").css("border", "");
 	})
+
+$("#projects").click( 
+	function(){
+		$("#projects").unbind("mouseenter mouseleave"); 
+		$("body").css("background-image", "url(images/miniplant.png)");
+		$("#index1").css("border", "1px solid #85D5F7");
+		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#projects").mouseleave(
+			function(){
+				$("#projects").hover( 
+				function(){
+					$("body").css("background-image", "url(images/miniplant.png)");
+					$("#index1").css("border", "1px solid #85D5F7");
+				},
+				function(){
+					$("body").css("background-image", "");
+					$("#index1").css("border", "");
+					$(".innerBox").css("border", "");
+				})
+			})
+	})
+
 $("#resume").hover( 
 	function(){
 		$("body").css("background-image", "url(images/miniresume.png)")
@@ -45,6 +135,28 @@ $("#resume").hover(
 	function(){
 		$("body").css("background-image", "");
 		$("#index1").css("border", "");
+		$(".innerBox").css("border", "");
+	})
+
+$("#resume").click( 
+	function(){
+		$("#resume").unbind("mouseenter mouseleave"); 
+		$("body").css("background-image", "url(images/miniresume.png)");
+		$("#index1").css("border", "1px solid #85D5F7");
+		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#resume").mouseleave(
+			function(){
+				$("#resume").hover( 
+				function(){
+					$("body").css("background-image", "url(images/miniresume.png)");
+					$("#index1").css("border", "1px solid #85D5F7");
+				},
+				function(){
+					$("body").css("background-image", "");
+					$("#index1").css("border", "");
+					$(".innerBox").css("border", "");
+				})
+			})
 	})
 
 $("#email").hover( 
@@ -53,8 +165,10 @@ $("#email").hover(
 		$("#phone")[0].height="183";
 	},
 	function(){
-		$("#phone")[0].src="images/minihotlinebling.png";
+		$("#phone")[0].src="images/minihotlineblingcropped.png";
 	})
+
+
 
 $("#linkedin").hover( 
 	function(){
@@ -62,7 +176,7 @@ $("#linkedin").hover(
 		$("#phone")[0].height="183";
 	},
 	function(){
-		$("#phone")[0].src="images/minihotlinebling.png";
+		$("#phone")[0].src="images/minihotlineblingcropped.png";
 		$("#phone")[0].height="183";
 	})
 
@@ -93,3 +207,13 @@ $("#mfc").hover(
 	function(){
 		$("#plant")[0].src="images/plant.png";
 	})
+
+$("#backToTop").hide();
+
+$(window).scroll(function() {
+    if($(window).scrollTop() > 0) {
+        $("#backToTop").show();
+    } else {
+        $("#backToTop").hide();
+    }
+});
