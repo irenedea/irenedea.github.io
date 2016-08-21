@@ -175,8 +175,8 @@ div.innerBox {
 	z-index: 1;
 	position: fixed;
 	display: inline-block;
-    top: 85%;
-    left: 85%;
+    bottom: 5%;
+    right: 5%;
 }
 
 #phone{
