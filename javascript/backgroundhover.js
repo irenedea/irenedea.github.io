@@ -1,3 +1,19 @@
+$(document).ready(function() {
+	var about_vh = $("#aboutInnerBox").height()/$(window).height() * 100 + 40;
+  	if (about_vh > 100){
+  		$("#aboutBox").css("height",  about_vh + "vh");
+  	} else {
+  		$("#aboutBox").css("height",  100 + "vh");
+  	}
+
+  	var art_vh = $("#artInnerBox").height()/$(window).height() * 100 + 40;
+  	if (art_vh > 100){
+  		$("#artBox").css("height",  art_vh + "vh");
+  	} else {
+  		$("#artBox").css("height",  100 + "vh");
+  	}
+});
+
 
 $("#art").hover( 
 	function(){

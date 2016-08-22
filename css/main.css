@@ -140,6 +140,7 @@ a:hover {
 
 div.box {
 	height: 100vh;
+	position: static;
 }
 
 
@@ -181,5 +182,10 @@ div.innerBox {
 
 #phone{
 	height: 130px;
+}
+
+
+#artInnerBox{
+	width: 70%;
 }
 
