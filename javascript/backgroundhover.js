@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 	var about_vh = $("#aboutInnerBox").height()/$(window).height() * 100 + 40;
   	if (about_vh > 100){
   		$("#aboutBox").css("height",  about_vh + "vh");
