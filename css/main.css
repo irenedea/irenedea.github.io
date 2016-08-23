@@ -110,13 +110,6 @@ p.nav {
 	text-decoration: none
 }
 
-#currentpage {
-	color: #A94C9C;
-	font-weight: bold;
-	background-color: yellow;
-}
-
-
 
 a:link {
     text-decoration: underline;
@@ -139,8 +132,8 @@ a:hover {
 
 
 div.box {
-	height: 100vh;
-	position: static;
+	min-height: 100vh;
+	position: relative;
 }
 
 
@@ -148,12 +141,12 @@ div.box {
 div.innerBox {
 	background-color: white;
 	height: auto;
-/*	width: 600px;*/
 	top: 50%;
 	left: 50%;
-	position: relative;
+	position: absolute;
 	padding: 2%;
 	transform: translate(-50%, -50%);
+
 }
 
 #index1{
@@ -161,12 +154,6 @@ div.innerBox {
 }
 
 
-
-#myPic {
-	float: left;
-	width: 600px;
-	margin-left: 20px
-}
 
 #resumeInnerBox{
 	width: 70%;
@@ -189,7 +176,7 @@ div.innerBox {
 	width: 70%;
 }
 
-#art{
+#artdesign{
 	display: block;
 }
 
