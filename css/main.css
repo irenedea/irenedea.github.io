@@ -1,61 +1,14 @@
-.dropbtn {
-    background-color: white;
-	color: #4B8EAA;
-    padding: 16px;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    font-family: "Century Gothic", "Avenir-Book";
-}
-
-.dropdown {
-	z-index: 1;
-    position: fixed;
-    display: inline-block;
-    top: 2%;
-    left: 90%;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    right: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    font-weight: bold;
-    color: #4B8EAA;
-}
-
-#drop {
-	text-decoration: none;
-}
-
-
-
 p.title{
 	font-size: 130px;
 	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 	text-align: center;
 	color: black;
+}
+
+#my_name{
+	font-size: 130px;
 }
 
 #name {
@@ -69,6 +22,7 @@ p.description {
 	margin-top: auto;
 	margin: auto;
 	width: 90%;
+	color: black;
 }
 
 #homeDescription {
@@ -84,14 +38,23 @@ p.links {
 	margin-top: auto;
 	margin: auto;
 	text-align: center;
+	color: black;
 }
 
-p.aboutText {
-	font-size: 18.5px;
-	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
-	margin-top: auto;
-	margin: auto;
+a:link {
+    text-decoration: underline;
+    color: black;
 }
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: #4B8EAA;
+}
+
 
 #aboutInnerBox{
 	width: 70%;
@@ -111,26 +74,6 @@ p.nav {
 }
 
 
-a:link {
-    text-decoration: underline;
-    color: black
-}
-
-a.nav {
-	text-decoration: none;
-}
-
-a:visited {
-	color: black;
-}
-
-a:hover {
-    text-decoration: line-through;
-    color: #4B8EAA;
-}
-
-
-
 div.box {
 	min-height: 100vh;
 	position: relative;
@@ -146,6 +89,9 @@ div.innerBox {
 	position: absolute;
 	padding: 2%;
 	transform: translate(-50%, -50%);
+	padding-bottom: 5%;
+	width: 70%;
+
 }
 
 #index1{
@@ -153,15 +99,9 @@ div.innerBox {
 }
 
 
-
-#resumeInnerBox{
-	width: 70%;
-}
-
 #backToTop{
 	z-index: 1;
 	position: fixed;
-	display: inline-block;
     bottom: 5%;
     right: 5%;
 }
@@ -171,11 +111,25 @@ div.innerBox {
 }
 
 
-#artInnerBox{
-	width: 70%;
+#artInnerBox img{
+	display: inline-block;
+	width: 50%;
 }
 
-#artdesign{
-	display: block;
+#projects{
+	width: 90%;
+	margin: 0 auto;
 }
+
+#projects p{
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
+	font-size: 3.1vh;
+}
+
+#projects a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
 

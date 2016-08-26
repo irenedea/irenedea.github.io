@@ -12,13 +12,30 @@ $(window).load(function() {
   	} else {
   		$("#artBox").css("height",  100 + "vh");
   	}
+
+  	var project_vh = $("#projectInnerBox").height()/$(window).height() * 100 + 40;
+  	if (project_vh > 100){
+  		$("#projectBox").css("height",  project_vh + "vh");
+  	} else {
+  		$("#projectBox").css("height",  100 + "vh");
+  	}
 });
 
+
+// $("#my_name").hover( 
+// 	function(){
+// 		$("#my_name").css("color", "white");
+// 		$("#index1").css("background-color", "#85D5F7")
+// 	},
+// 	function(){
+// 		$("#my_name").css("color", "");
+// 		$("#index1").css("background-color", "");
+// 	})
 
 $("#art").hover( 
 	function(){
 		$("body").css("background-image", "url(images/miniminipencil.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
 	},
 	function(){
 		$("body").css("background-image", "");
@@ -30,14 +47,14 @@ $("#art").click(
 	function(){
 		$("#art").unbind("mouseenter mouseleave"); 
 		$("body").css("background-image", "url(images/miniminipencil.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
-		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
+		$(".innerBox").css("border", "2px solid #85D5F7");
 		$("#art").mouseleave(
 			function(){
 				$("#art").hover( 
 				function(){
 					$("body").css("background-image", "url(images/miniminipencil.png)");
-					$("#index1").css("border", "1px solid #85D5F7");
+					$("#index1").css("border", "2px solid #85D5F7");
 				},
 				function(){
 					$("body").css("background-image", "");
@@ -50,7 +67,7 @@ $("#art").click(
 $("#about").hover( 
 	function(){
 		$("body").css("background-image", "url(images/miniminicreature.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
 	},
 	function(){
 		$("body").css("background-image", "");
@@ -62,14 +79,14 @@ $("#about").click(
 	function(){
 		$("#about").unbind("mouseenter mouseleave"); 
 		$("body").css("background-image", "url(images/miniminicreature.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
-		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
+		$(".innerBox").css("border", "2px solid #85D5F7");
 		$("#about").mouseleave(
 			function(){
 				$("#about").hover( 
 				function(){
 					$("body").css("background-image", "url(images/miniminicreature.png)");
-					$("#index1").css("border", "1px solid #85D5F7");
+					$("#index1").css("border", "2px solid #85D5F7");
 				},
 				function(){
 					$("body").css("background-image", "");
@@ -82,7 +99,7 @@ $("#about").click(
 $("#contact").hover( 
 	function(){
 		$("body").css("background-image", "url(images/minihotlinebling.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
 	},
 	function(){
 		$("body").css("background-image", "");
@@ -94,14 +111,14 @@ $("#contact").click(
 	function(){
 		$("#contact").unbind("mouseenter mouseleave"); 
 		$("body").css("background-image", "url(images/minihotlinebling.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
-		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
+		$(".innerBox").css("border", "2px solid #85D5F7");
 		$("#contact").mouseleave(
 			function(){
 				$("#contact").hover( 
 				function(){
 					$("body").css("background-image", "url(images/minihotlinebling.png)");
-					$("#index1").css("border", "1px solid #85D5F7");
+					$("#index1").css("border", "2px solid #85D5F7");
 				},
 				function(){
 					$("body").css("background-image", "");
@@ -114,7 +131,7 @@ $("#contact").click(
 $("#projects").hover( 
 	function(){
 		$("body").css("background-image", "url(images/miniplant.png)")
-		$("#index1").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
 	},
 	function(){
 		$("body").css("background-image", "");
@@ -126,14 +143,14 @@ $("#projects").click(
 	function(){
 		$("#projects").unbind("mouseenter mouseleave"); 
 		$("body").css("background-image", "url(images/miniplant.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
-		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
+		$(".innerBox").css("border", "2px solid #85D5F7");
 		$("#projects").mouseleave(
 			function(){
 				$("#projects").hover( 
 				function(){
 					$("body").css("background-image", "url(images/miniplant.png)");
-					$("#index1").css("border", "1px solid #85D5F7");
+					$("#index1").css("border", "2px solid #85D5F7");
 				},
 				function(){
 					$("body").css("background-image", "");
@@ -146,7 +163,7 @@ $("#projects").click(
 $("#resume").hover( 
 	function(){
 		$("body").css("background-image", "url(images/miniresume.png)")
-		$("#index1").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
 	},
 	function(){
 		$("body").css("background-image", "");
@@ -158,14 +175,14 @@ $("#resume").click(
 	function(){
 		$("#resume").unbind("mouseenter mouseleave"); 
 		$("body").css("background-image", "url(images/miniresume.png)");
-		$("#index1").css("border", "1px solid #85D5F7");
-		$(".innerBox").css("border", "1px solid #85D5F7");
+		$("#index1").css("border", "2px solid #85D5F7");
+		$(".innerBox").css("border", "2px solid #85D5F7");
 		$("#resume").mouseleave(
 			function(){
 				$("#resume").hover( 
 				function(){
 					$("body").css("background-image", "url(images/miniresume.png)");
-					$("#index1").css("border", "1px solid #85D5F7");
+					$("#index1").css("border", "2px solid #85D5F7");
 				},
 				function(){
 					$("body").css("background-image", "");
