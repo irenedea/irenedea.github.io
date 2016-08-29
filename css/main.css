@@ -104,6 +104,7 @@ div.innerBox {
     bottom: 5%;
     right: 5%;
     opacity: .6;
+    display: none;
 }
 
 #phone{
@@ -138,6 +139,7 @@ div.popup{
 	height: 70%;
 	z-index: 1;
 	border: 2px solid #85D5F7;
+	display: none;
 }
 
 img.x{
