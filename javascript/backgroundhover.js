@@ -1,4 +1,13 @@
+var timer = 0;
+$("#NERDpopup").hide();
+$("#STKpopup").hide();
+$("#editorpopup").hide();
+$("#bearmapspopup").hide();
+$("#mfcpopup").hide();
+
 $(window).load(function() {
+	$("body").css("overflow", "hidden");
+	timer = setInterval(showSite , 2000 )
 	var about_vh = $("#aboutInnerBox").height()/$(window).height() * 100 + 40;
   	if (about_vh > 100){
   		$("#aboutBox").css("height",  about_vh + "vh");
@@ -19,18 +28,17 @@ $(window).load(function() {
   	} else {
   		$("#projectBox").css("height",  100 + "vh");
   	}
+	$("#backToTop").hide();
+	$(".box").hide();
 });
 
 
-// $("#my_name").hover( 
-// 	function(){
-// 		$("#my_name").css("color", "white");
-// 		$("#index1").css("background-color", "#85D5F7")
-// 	},
-// 	function(){
-// 		$("#my_name").css("color", "");
-// 		$("#index1").css("background-color", "");
-// 	})
+function showSite() {
+      clearInterval(timer);
+      $("#intro").fadeOut();
+      $(".box").fadeIn();
+      $("body").css("overflow", "visible");
+}
 
 $("#art").hover( 
 	function(){
@@ -213,35 +221,72 @@ $("#linkedin").hover(
 		$("#phone")[0].height="183";
 	})
 
-$("#resume2").hover( 
+
+$("#backToTop").hover(
 	function(){
-		$("#paper")[0].src="images/resume3.png";
-		$("#paper")[0].height="183";
+		$("#backToTop").css("opacity", "1");
 	},
 	function(){
-		$("#paper")[0].src="images/miniresume.png";
+		$("#backToTop").css("opacity", ".6");
 	})
 
-$("#bigMac").hover( 
+$(".x").hover(
 	function(){
-		$("#plant")[0].src="images/minibig_mac.png";
-		$("#plant")[0].height="183";
+		$(this).css("opacity", "1");
 	},
 	function(){
-		$("#plant")[0].src="images/plant.png";
+		$(this).css("opacity", ".6");
 	})
 
-
-$("#mfc").hover( 
+$(".grid").hover(
 	function(){
-		$("#plant")[0].src="images/minilightbulb.png";
-		$("#plant")[0].height="183";
+		$(this).css("opacity", ".8");
 	},
 	function(){
-		$("#plant")[0].src="images/plant.png";
+		$(this).css("opacity", "1");
 	})
 
-$("#backToTop").hide();
+$("#NERD").click(
+	function(){
+		$("#NERDpopup").show();
+		$("body").css("overflow", "hidden");
+		$("#backToTop").hide();
+	})
+
+$("#STK").click(
+	function(){
+		$("#STKpopup").show();
+		$("body").css("overflow", "hidden");
+		$("#backToTop").hide();
+	})
+
+$("#editor").click(
+	function(){
+		$("#editorpopup").show();
+		$("body").css("overflow", "hidden");
+		$("#backToTop").hide();
+	})
+
+$("#bearmaps").click(
+	function(){
+		$("#bearmapspopup").show();
+		$("body").css("overflow", "hidden");
+		$("#backToTop").hide();
+	})
+
+$("#mfc").click(
+	function(){
+		$("#mfcpopup").show();
+		$("body").css("overflow", "hidden");
+		$("#backToTop").hide();
+	})
+
+$(".x").click(
+	function(){
+		$(this).parent().parent().hide();
+		$("body").css("overflow", "visible");
+		$("#backToTop").show();
+	})
 
 $(window).scroll(function() {
     if($(window).scrollTop() > 0) {
