@@ -14,8 +14,8 @@ p.title font2 {
 }
 
 img.backToHome{
-	z-index: 1;
 	position: fixed;
+	z-index: 1;
     bottom: 5%;
     right: 5%;
     height: 100px;
