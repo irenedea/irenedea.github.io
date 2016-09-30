@@ -4,6 +4,7 @@ $("#STKpopup").hide();
 $("#editorpopup").hide();
 $("#bearmapspopup").hide();
 $("#mfcpopup").hide();
+$("#sitepopup").hide();
 
 $(window).load(function() {
 	$("body").css("overflow", "hidden");
@@ -277,6 +278,13 @@ $("#bearmaps").click(
 $("#mfc").click(
 	function(){
 		$("#mfcpopup").show();
+		$("body").css("overflow", "hidden");
+		$("#backToTop").hide();
+	})
+
+$("#site").click(
+	function(){
+		$("#sitepopup").show();
 		$("body").css("overflow", "hidden");
 		$("#backToTop").hide();
 	})
