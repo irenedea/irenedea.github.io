@@ -1,0 +1,19 @@
+.art_container {
+	margin: 0 auto;
+	width: 60%;
+}
+
+img.art {
+	width: 100%;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+}
+
+img.art:hover {
+	border-color: black;
+}
+
+.art_overlay {
+	width: 100%;
+}
