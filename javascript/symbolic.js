@@ -429,7 +429,7 @@
   };
   Tokens.prototype.advance = function () {
     if (!this.canAdvance())
-      throw IllegalStateException_init('Cannot advance to next token for ' + this.tokens_0 + '.');
+      throw IllegalStateException_init('Cannot advance to next token.');
     var $receiver = this.tokens_0.get_za3lpa$(this.index_0);
     this.index_0 = this.index_0 + 1 | 0;
     return $receiver;
@@ -458,6 +458,8 @@
         balance = balance + 1 | 0;
       this.advance();
     }
+    if (this.at_vf8yvd$(TokenType$LPAR_getInstance()))
+      throw IllegalStateException_init('Did you mean to use *?');
     return Tokens_init_0(this.tokens_0.subList_vux9f0$(startIndex + 1 | 0, this.index_0 - 1 | 0));
   };
   Tokens.prototype.toString = function () {
@@ -533,12 +535,12 @@
     try {
       tmp$_2 = ((tmp$_1 = normalize(input1.value)) != null ? tmp$_1.equals(normalize(input2.value)) : null) ? 'EQUAL!' : 'UNEQUAL!';
     }
-     catch (_) {
-      if (Kotlin.isType(_, IllegalStateException)) {
-        tmp$_2 = 'Error :(';
+     catch (e) {
+      if (Kotlin.isType(e, IllegalStateException)) {
+        tmp$_2 = 'Error: ' + e.message;
       }
        else
-        throw _;
+        throw e;
     }
     var output = tmp$_2;
     var outputElem = Kotlin.isType(tmp$_3 = document.getElementById('output'), HTMLParagraphElement) ? tmp$_3 : throwCCE();
