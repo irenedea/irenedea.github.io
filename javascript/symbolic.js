@@ -31,7 +31,7 @@
   var emptyList = Kotlin.kotlin.collections.emptyList_287e2$;
   var println = Kotlin.kotlin.io.println_s8jyv4$;
   var throwCCE = Kotlin.throwCCE;
-  var Exception = Kotlin.kotlin.Exception;
+  var IllegalStateException = Kotlin.kotlin.IllegalStateException;
   var Unit = Kotlin.kotlin.Unit;
   var IllegalArgumentException_init = Kotlin.kotlin.IllegalArgumentException_init_pdl1vj$;
   var hashCode = Kotlin.hashCode;
@@ -528,7 +528,7 @@
       tmp$_2 = ((tmp$_1 = normalize(input1.value)) != null ? tmp$_1.equals(normalize(input2.value)) : null) ? 'EQUAL!' : 'UNEQUAL!';
     }
      catch (_) {
-      if (Kotlin.isType(_, Exception)) {
+      if (Kotlin.isType(_, IllegalStateException)) {
         tmp$_2 = 'Error :(';
       }
        else
