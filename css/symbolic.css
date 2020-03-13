@@ -3,6 +3,42 @@ body {
 	background-repeat: repeat;
 }
 
+button.popup {
+	background-color: white;
+	font-size: 20px;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
+}
+
+#bugReporter {
+	right: 8px;
+	top: 0px;
+	position: absolute;
+}
+
+#bugReporter:hover {
+	color: Tomato;
+	cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 140px;
+  background-color: #d9d3cc;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+#bugReporter:hover .tooltip {
+	visibility: visible;
+}
+
 #index1 {
 	background-color: white;
 	top: 50%;
@@ -11,6 +47,22 @@ body {
 	padding: 5%;
 	transform: translate(-50%, -50%);
 	border: 2px solid #85D5F7
+}
+
+#popup {
+	background-color: white;
+	height: 50%;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	padding: 5%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #85D5F7;
+	visibility: hidden;
+	z-index: 1;
+	font-size: 20px;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
 }
 
 input.input {
