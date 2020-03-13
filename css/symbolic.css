@@ -1,0 +1,35 @@
+body {
+	background-image: url(../images/miniminipencil.png);
+	background-repeat: repeat;
+}
+
+#index1 {
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	padding: 5%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #85D5F7
+}
+
+input.input {
+	font-size: 20px;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
+}
+
+button.input {
+	font-size: 15px;
+	height: 33px;
+}
+
+#output {
+	font-size: 22px;
+	height: 22px;
+	font-family: "Century Gothic", "Avenir-Book", "Arial", "Sans-serif";
+}
+
+#warning {
+	color: #85D5F7;
+	font-size: 12px;
+}
