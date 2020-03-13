@@ -520,6 +520,12 @@
     println('=> ' + ast);
     return runPasses(ast, [ExpandSub_getInstance(), ExpandConst_getInstance(), ExpandUnary_getInstance(), Distributive_getInstance(), CleanNegOnes_getInstance(), CleanZerosOnes_getInstance(), NegOnesToUnary_getInstance(), ReduceAddNegates_getInstance(), Normalize_getInstance()], true);
   }
+  function main$lambda$lambda(closure$outputElem) {
+    return function () {
+      closure$outputElem.style.color = 'black';
+      return Unit;
+    };
+  }
   function main$lambda(it) {
     var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3;
     var input1 = Kotlin.isType(tmp$ = document.getElementById('input1'), HTMLInputElement) ? tmp$ : throwCCE();
@@ -535,7 +541,11 @@
         throw _;
     }
     var output = tmp$_2;
-    (Kotlin.isType(tmp$_3 = document.getElementById('output'), HTMLParagraphElement) ? tmp$_3 : throwCCE()).innerText = output;
+    var outputElem = Kotlin.isType(tmp$_3 = document.getElementById('output'), HTMLParagraphElement) ? tmp$_3 : throwCCE();
+    outputElem.innerText = output;
+    outputElem.style.color = '#85D5F7';
+    window.setTimeout(main$lambda$lambda(outputElem), 200);
+    outputElem.style.color = '#85D5F7';
     return Unit;
   }
   function main() {
