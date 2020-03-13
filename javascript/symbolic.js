@@ -31,6 +31,7 @@
   var emptyList = Kotlin.kotlin.collections.emptyList_287e2$;
   var println = Kotlin.kotlin.io.println_s8jyv4$;
   var throwCCE = Kotlin.throwCCE;
+  var Exception = Kotlin.kotlin.Exception;
   var Unit = Kotlin.kotlin.Unit;
   var IllegalArgumentException_init = Kotlin.kotlin.IllegalArgumentException_init_pdl1vj$;
   var hashCode = Kotlin.hashCode;
@@ -520,17 +521,25 @@
     return runPasses(ast, [ExpandSub_getInstance(), ExpandConst_getInstance(), ExpandUnary_getInstance(), Distributive_getInstance(), CleanNegOnes_getInstance(), CleanZerosOnes_getInstance(), NegOnesToUnary_getInstance(), ReduceAddNegates_getInstance(), Normalize_getInstance()], true);
   }
   function main$lambda(it) {
-    var tmp$, tmp$_0, tmp$_1, tmp$_2;
+    var tmp$, tmp$_0, tmp$_1, tmp$_2, tmp$_3;
     var input1 = Kotlin.isType(tmp$ = document.getElementById('input1'), HTMLInputElement) ? tmp$ : throwCCE();
     var input2 = Kotlin.isType(tmp$_0 = document.getElementById('input2'), HTMLInputElement) ? tmp$_0 : throwCCE();
-    var output = ((tmp$_1 = normalize(input1.value)) != null ? tmp$_1.equals(normalize(input2.value)) : null) ? 'EQUAL!' : 'UNEQUAL!';
-    (Kotlin.isType(tmp$_2 = document.getElementById('output'), HTMLParagraphElement) ? tmp$_2 : throwCCE()).innerText = output;
+    try {
+      tmp$_2 = ((tmp$_1 = normalize(input1.value)) != null ? tmp$_1.equals(normalize(input2.value)) : null) ? 'EQUAL!' : 'UNEQUAL!';
+    }
+     catch (_) {
+      if (Kotlin.isType(_, Exception)) {
+        tmp$_2 = 'Error :(';
+      }
+       else
+        throw _;
+    }
+    var output = tmp$_2;
+    (Kotlin.isType(tmp$_3 = document.getElementById('output'), HTMLParagraphElement) ? tmp$_3 : throwCCE()).innerText = output;
     return Unit;
   }
   function main() {
     var tmp$;
-    println('hello world!');
-    document.title = 'BLAHBLAH';
     var button = Kotlin.isType(tmp$ = document.getElementById('mybutton'), HTMLButtonElement) ? tmp$ : throwCCE();
     button.addEventListener('click', main$lambda);
   }
